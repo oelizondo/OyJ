@@ -1,0 +1,19 @@
+@mixin rotate($deg) {
+    -webkit-transform: rotate($deg);
+       -moz-transform: rotate($deg);
+        -ms-transform: rotate($deg);
+         -o-transform: rotate($deg);
+            transform: rotate($deg);
+}
+
+@mixin box-sizing {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@mixin flex-wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
