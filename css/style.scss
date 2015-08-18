@@ -1,6 +1,5 @@
 @import 'mixins';
 @import 'variables';
-@import 'animations';
 
 body {
     margin: 0;
@@ -12,11 +11,30 @@ body {
 .landing-content {
     display: flex;
     flex-wap: wrap;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
-    background: #fff;
     justify-content: center;
     align-items: center;
+
+    .landing-navigation {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      text-align: right;
+      ul {
+        list-style: none;
+
+        li {
+          display: inline-block;
+          margin: 0 15px;
+
+          &:hover {
+            transition: 0.3s;
+            opacity: 0.4;
+          }
+        }
+      }
+    }
 
     .landing-items {
         text-align: center;
@@ -50,7 +68,7 @@ body {
     min-height: 100vh;
     display: flex;
     @include flex-wrap;
-
+    margin-bottom: 20px;
     .half {
         width: 50%;
         height: 100%;
@@ -90,11 +108,10 @@ body {
 }
 
 .skillset {
-    min-height: 80vh;
-
+    min-height: 65vh;
+    margin-bottom: 60px;
     h3 {
-        margin-left: 50px;
-        max-width: 550px;
+        text-align: center;
         font-weight: 100;
     }
 
@@ -110,25 +127,27 @@ body {
             margin: 25px;
             font-family: 'devicons';
             font-size: 65px;
+
+            &:hover {
+              transition: 0.4s;
+              opacity: 0.4;
+            }
         }
     }
 }
 
 .portfolio {
     min-height: 90vh;
-    @include box-sizing;
-    display: flex;
-    @include flex-wrap;
 
     h3 {
-        margin-left: 50px;
-        max-width: 350px;
-        font-weight: 100;
+      text-align: center;
+      font-weight: 100;
     }
 
     .project-container {
         width: 100%;
         height: 100%;
+        margin-top: 60px;
         -webkit-justify-content: center;
         justify-content: center;
         display: flex;
