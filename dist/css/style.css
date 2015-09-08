@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-wap: wrap;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   justify-content: center;
   align-items: center; }
   .landing-content .landing-navigation {
@@ -21,6 +21,9 @@ body {
       .landing-content .landing-navigation ul li {
         display: inline-block;
         margin: 0 15px; }
+        .landing-content .landing-navigation ul li a {
+          text-decoration: none;
+          color: inherit; }
         .landing-content .landing-navigation ul li:hover {
           transition: 0.3s;
           opacity: 0.4; }
@@ -106,7 +109,11 @@ body {
         opacity: 0.4; }
 
 .portfolio {
-  min-height: 90vh; }
+  min-height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 50px; }
   .portfolio h3 {
     text-align: center;
     font-weight: 100; }
@@ -132,6 +139,15 @@ body {
       .portfolio .project-container .project img {
         height: 100%;
         width: 100%; }
+
+.contact {
+  height: 50vh; }
+  .contact .modal {
+    background: black;
+    width: 500px;
+    height: 90%;
+    margin: 0 auto;
+    opacity: 0.7; }
 
 @media (max-width: 900px) {
   .main-content .left-half {
